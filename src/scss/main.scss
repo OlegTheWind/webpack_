@@ -1,0 +1,375 @@
+body{
+    font-size: 16px;
+    line-height: 24px;
+    overflow: auto;
+    letter-spacing: -0.2px;
+    background-color: #F8F8F8;
+
+}
+
+.main__title{
+    padding-top: 25px
+}
+
+.main__text{
+    align-self: center;
+}
+
+button{
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+.round-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.menu_upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block1__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight{
+    width: 4px;
+    height: 32px;
+    border-radius: 1px;
+    background: #41F6D7;
+}
+
+.slide__button{
+    border: 2px solid #F8F8F8;
+    border-radius: 6px;
+    align-items: center;
+    display: flex;
+}
+
+.slide__button:focus{
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    align-items: center;
+    display: flex;
+}
+
+.button-b{
+    display: flex;
+    align-items: center;
+    padding: 16px 0 0 10px ;
+}
+
+.slide__button{
+    color: #7E7E82;
+}
+
+.background__img{
+    margin: 15px 0;
+}
+
+.upper-menu__icon_repair-button-full{
+    margin-left: -30px;
+}
+
+.block1__text{
+    display: flex;
+    flex-direction: column;
+}
+.footer__text{
+  color: #7E7E82;
+}
+
+
+@media (min-width: 320px) {
+    .aside__full{
+      display: none;
+    }
+
+    .block1__text{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+
+    }
+    .button__active-b{
+        display: none;
+    }
+    .button__active-c{
+        display: none;
+    }
+
+    .header-nav__btn{
+        margin-right: auto;
+        width: 97px;
+        height: 51px;
+    }
+
+    .menu_upper{
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .menu_upper{
+        gap: 16px;
+        align-items: center;
+
+    }
+
+    .divider1{
+        display: none;
+    }
+
+    .divider2{
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: #EAEAEA;
+    }
+
+    .highlight{
+        width: 4px;
+        height: 32px;
+        border-radius: 1px;
+        background: #41F6D7;
+    }
+
+    .main__title{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .slide__menu{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+        overflow: auto;
+        white-space: nowrap;
+        margin-top: 15px;
+    }
+
+    img{
+        max-width: 99%;
+        height: auto;
+    }
+    .block1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .aside__menu__zIndex{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 320px;
+      height: 100%;
+      background-color:rgba(255,255,255,1);
+      z-index: 5;
+    }
+    .aside__feedback-call{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 320px;
+      height: 100%;
+      background-color:rgba(255,255,255,1);
+      z-index: 5;
+    }
+    .aside__feedback-form{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 320px;
+      height: 100%;
+      background-color:rgba(255,255,255,1);
+      z-index: 5;
+    }
+    .menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      display: none;
+      z-index: 5;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #menu {
+      z-index: 10;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+
+    .header-nav__btn{
+        margin-right: auto;
+    }
+
+    .button__active-b{
+        display: block;
+    }
+
+    .background__img {
+        margin: 17px 0;
+    }
+
+    .divider1{
+        display: block;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: #EAEAEA;
+    }
+
+    .divider2{
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: #EAEAEA;
+    }
+
+    .menu_upper{
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .round-button{
+        gap: 16px;
+        align-items: center;
+    }
+
+    .block1__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 150px;
+    }
+
+    .background__img{
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    img{
+        max-width: 99%;
+        height: auto;
+        background-position: center;
+    }
+
+    .block1{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .block1__block2{
+        width: 50%;
+    }
+
+    .background__img{
+        width: 50%;
+    }
+
+    .block1__block2{
+        padding-top: 18px;
+    }
+
+}
+
+@media (min-width: 1120px){
+    .aside__full{
+      display: block;
+    }
+    .menu_upper{
+        display: none;
+    }
+
+    .upper-menu__icon-full{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-left: auto;
+        padding-right: 16px;
+    }
+
+    .upper-menu__icon-full{
+        justify-content: center;
+        align-items: center
+    }
+
+    .slide__menu{
+        display: flex;
+        gap: 0;
+        row-gap: 10px;
+        align-items: center;
+        padding: 10px;
+        overflow: auto;
+        white-space: nowrap;
+        flex-wrap: wrap;
+    }
+
+    .slide__button{
+        margin-right: 29px;
+    }
+
+    .upper-menu__icon_repair-button-full{
+        display: block;
+        align-items: center;
+    }
+
+    .upper-menu__icon_check-status-button-full{
+        display: block;
+        align-items: center;
+        margin-left: 160px;
+    }
+
+    .upper-menu__icon_repair-button-full::before{
+        content: "Оставить заявку";
+        align-content: flex-end;
+        margin-left: -160px;
+        letter-spacing: -0.2px;
+        font-size: 18px;
+    }
+
+    .upper-menu__icon_check-status-button-full::before{
+        content: "Статус ремонта";
+        letter-spacing: -0.2px;
+        margin-left: -160px;
+        font-size: 18px;
+    }
+
+    .block1__text{
+        height: 140px;
+    }
+    button{
+        padding-right: 20px;
+    }
+    .main{
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .aside_main{
+      flex: 0 0 200px;
+      padding-right: 10px;
+    }
+    .main__content{
+      flex: 1;
+      padding-left: 10px;
+      width: 100%;
+    }
+}
+
